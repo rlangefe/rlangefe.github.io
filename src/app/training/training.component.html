@@ -41,11 +41,11 @@
                     </div>
                     <div class="training-back-flip text-center text-white p-4">
                         <div class="mb-1">{{training['description']}}</div><br><ng-template #title><strong>
-                                <em>Certificate Link</em> </strong></ng-template><a rel="noreferrer"
+                                <em>Link to Website</em> </strong></ng-template><a rel="noreferrer"
                             aria-label="certificate(opens in a new tab)"
-                            href="https://drive.google.com/file/d/{{training['link']}}/view?usp=sharing" target=_blank
+                            href="{{training['link']}}" target=_blank
                             class="btn btn-round p-2 certificate-button" placement="bottom" [ngbTooltip]="title">
-                            Certificate Link </a>
+                            Link</a>
                     </div>
                 </div>
             </div>
