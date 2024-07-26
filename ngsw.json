@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1722015200810,
+  "timestamp": 1722025275671,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/285.78134323e848f886.js",
+        "/285.8fe2ccf994287edd.js",
         "/372.e11d04266c12ced4.js",
         "/favicon.ico",
         "/index.html",
-        "/main.4631d9701f8c823f.js",
+        "/main.563510ba113b0422.js",
         "/polyfills.c499bad9699d984b.js",
-        "/runtime.5803a37061c7d54c.js",
-        "/scripts.8fbc9f6c0de232eb.js",
+        "/runtime.47ac3f96006090f6.js",
+        "/scripts.ae710a7fe0e68dd1.js",
         "/styles.61b0674320f41b27.css"
       ],
       "patterns": []
@@ -69,6 +69,8 @@
         "/assets/images/achievement/Hacktoberfest.webp",
         "/assets/images/background-image.jpg",
         "/assets/images/bgimg.webp",
+        "/assets/images/education/um_biostat.png",
+        "/assets/images/education/wfu.png",
         "/assets/images/footer-cloud.svg",
         "/assets/images/frame-desktop.webp",
         "/assets/images/frame-mobile.webp",
@@ -121,14 +123,14 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/285.78134323e848f886.js": "8f25823ac00a557f556f4e58d889375adebfd23b",
+    "/285.8fe2ccf994287edd.js": "6c7061211add6dfecbc719251a4955b67f3fc147",
     "/372.e11d04266c12ced4.js": "fbfdef73b030d6170e86c285178ace7592b09f96",
     "/404.4ed6dad8c73a710d.webp": "c55234174be110511c6fdf693770c8dde7f046c1",
     "/about-bg.7c80c2136d4a089d.svg": "2f4e718723ee93de8349ca37808a09b0d5bbce6c",
     "/apple-touch-icon.png": "8218fb45b26dea0f140a388bcc06c918d08f1d1d",
     "/assets/css/animate.min.css": "a4d92f96134ccd31915b4e226cfae053dfca2aa7",
     "/assets/css/font-awesome.min.css": "dfaddfbe114970658b78f30a0f417dac1896603f",
-    "/assets/data.min.js": "bab75350218cab497329ec272411f2a33e842eba",
+    "/assets/data.min.js": "37fe05d89dd1cf953fbbd814da045e4552cdcc86",
     "/assets/fonts/BlackOpsOne.eot": "a922adecfeba3ea43f4e644183728cdd1692dbb4",
     "/assets/fonts/BlackOpsOne.svg": "7c13e5df4822e44cfe78f1291757ef7fc4af6d8a",
     "/assets/fonts/BlackOpsOne.ttf": "024e07e45eefb57d4e55fffc082711c2d653e941",
@@ -161,6 +163,8 @@
     "/assets/images/achievement/Hacktoberfest.webp": "1dc3b04d84f75f5620f84b0f97ca1c913f1d36ee",
     "/assets/images/background-image.jpg": "cf7409cb59d89e1b31741266201ccaa6e7514c84",
     "/assets/images/bgimg.webp": "825d33dda8bbc1f4a7f211b168428414d32e517d",
+    "/assets/images/education/um_biostat.png": "632499945b76d8105b41b6f492ab5ba65ffe098c",
+    "/assets/images/education/wfu.png": "e75be5f026f1ba9901c3f5a50074679b53687d8d",
     "/assets/images/footer-cloud.svg": "1155d58266f7d048187fadd916618298c0daf9e3",
     "/assets/images/frame-desktop.webp": "583f7f187a3892dcb484d77d54b81a24e63d0581",
     "/assets/images/frame-mobile.webp": "d3a79b7fcc068b611ac98faafce68a6a175e1d17",
@@ -207,12 +211,12 @@
     "/favicon-16x16.png": "897f537be9e5741b714b45fab9d24a28830f22bd",
     "/favicon-32x32.png": "053c8fbd3b9a6acc1b02f32172933ddad15cb0c9",
     "/favicon.ico": "61ea5e23b3647a514301fbc841632aa209c0902f",
-    "/index.html": "ea98b8ce1ce181cc70b13bcccde4652d74cbd0cf",
-    "/main.4631d9701f8c823f.js": "b6319e0a31577bd9c68445979d0f500f8e5b1b9d",
+    "/index.html": "f4b93bc796bcd3bb791521dc294fce7ffd4cba4d",
+    "/main.563510ba113b0422.js": "18dc90b05d7e55a7736e24e9702e076d8379612e",
     "/polyfills.c499bad9699d984b.js": "547805018f75945417eb761fc72c66b301953163",
     "/quote-img.5e642c8eee792695.webp": "27936458251d3dbc6d1eecfc1e501ab93a3838bb",
-    "/runtime.5803a37061c7d54c.js": "6556dfce06f31e5b7d1769206bcf535f31722f28",
-    "/scripts.8fbc9f6c0de232eb.js": "30bcabc6093c7e6a2dbe0a06c61ec189558249ad",
+    "/runtime.47ac3f96006090f6.js": "91019d89adcddf41b05e0fa616dc97f9aea5eac5",
+    "/scripts.ae710a7fe0e68dd1.js": "9e58953d9be504abc7c9918a8dba645b0971f9ff",
     "/styles.61b0674320f41b27.css": "a8112361291e8a53e8493502f3dcbe8841480cc4"
   },
   "navigationUrls": [
