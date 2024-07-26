@@ -38,7 +38,7 @@
                                 {{aboutData['about']['Outside of Class'].join(', ')}}</p>-->
 
                         <!--Maybe change so it's all left aligned-->
-                        <p class="text-muted wow fadeInDownBig"><strong>Tools</strong> :
+                        <p class="text-muted wow fadeInUpBig"><strong>Tools</strong> :
                             {{aboutData['about']['Tools'].join(', ')}}<br>
                             <strong>Interests</strong> :
                             {{aboutData['about']['Interests'].join(', ')}}<br>
@@ -48,12 +48,49 @@
                 </div>
                 <div class="tab-pane fade" [ngClass]="{'active show': activeTab === 'skill'}" id="skill"
                     aria-labelledby="skill-tab">
+
+                    <h3 class="mt-5 fadeIn text-center">Skills</h3>
+
                     <div class="row">
                         <div class="col-lg-6" *ngFor="let skills of aboutData['skills']">
                             <div class="mt-5" *ngFor="let skillProgress of skills">
                                 <p class="text-muted text-uppercase mb-2">{{ skillProgress['skill'] }}</p>
                                 <div class="progress">
                                     <div class="progress-bar" [ngStyle]="{width:skillProgress.progress+'%'}">
+                                        <div class="progress-value text-muted">{{skillProgress.progress+'%'}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Programming Languages-->
+
+                    <h3 class="mt-5 fadeIn text-center">Programming Languages</h3>
+
+                    <div class="row">
+                        <div class="col-lg-6" *ngFor="let skills of aboutData['programmingLanguages']">
+                            <div class="mt-5" *ngFor="let skillProgress of skills">
+                                <p class="text-muted text-uppercase mb-2">{{ skillProgress['skill'] }}</p>
+                                <div class="progress">
+                                    <div class="progress-bar" [ngStyle]="{width:skillProgress.progress+'%', 'background-color': '#FF675B'}">
+                                        <div class="progress-value text-muted">{{skillProgress.progress+'%'}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--Languages-->
+
+                    <h3 class="mt-5 fadeIn text-center">Languages</h3>
+
+                    <div class="row">
+                        <div class="col-lg-6" *ngFor="let skills of aboutData['languages']">
+                            <div class="mt-5" *ngFor="let skillProgress of skills">
+                                <p class="text-muted text-uppercase mb-2">{{ skillProgress['skill'] }}</p>
+                                <div class="progress">
+                                    <div class="progress-bar" [ngStyle]="{width:skillProgress.progress+'%', 'background-color': '#2196F3'}">
                                         <div class="progress-value text-muted">{{skillProgress.progress+'%'}}</div>
                                     </div>
                                 </div>
@@ -67,8 +104,12 @@
                         <div class="col-lg-12">
                             <div class="education-section"><i class="fas fa-graduation-cap mt-5 font-size-50"></i>
                                 <div class="timeline mt-5">
+                                    <!--Maybe remove WOW animation or fix and add back to below class-->
                                     <div *ngFor="let ed of aboutData['education']"
-                                        class="wow timeline-box bounceIn{{ed['animationClass']}}" data-wow-delay="0s">
+                                        class="timeline-box bounceIn{{ed['animationClass']}}" data-wow-delay="0s">
+                                        <div class="image-content" style="text-align: {{ed['textAlignment']}};">
+                                            <img src="{{ed['imageUrl']}}" alt="{{ed['degree']}}" class="img-fluid" style="clip-path: circle(); max-height: 120px; max-width: 120px">
+                                        </div>
                                         <div class="timeline-container">
                                             <h3 class="experience-designation m-0 text-{{ed['textAlignment']}}">
                                                 {{ed['degree']}}</h3>
@@ -80,7 +121,8 @@
                                                 class="experience-description font-weight-normal text-{{ed['textAlignment']}}">
                                                 {{ed['percentage']}}</h6>
                                         </div>
-                                    </div>
+                                    </div>                                  
+                                        
                                     <div id="timeline-divider">
                                         <div class="timeline-traveller"><i class="fas fa-plane font-size-25"></i></div>
                                     </div>
