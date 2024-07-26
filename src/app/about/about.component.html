@@ -29,8 +29,21 @@
                         <h3 class="mb-3 wow fadeIn">{{aboutData['name']}} <small class="text-muted"> -
                                 {{aboutData['about']['tech-stats']}} </small></h3>
                         <p class="text-muted wow slideInUp">{{aboutData["about"]["bio"]}}</p>
+                        <!--
                         <p class="text-muted wow fadeInDownBig"><strong>Tools</strong> :
                             {{aboutData['about']['Tools'].join(', ')}}</p>
+                        <p class="text-muted wow fadeInDownBig"><strong>Interests</strong> :
+                            {{aboutData['about']['Interests'].join(', ')}}</p>
+                            <p class="text-muted wow fadeInDownBig"><strong>Outside of Class</strong> :
+                                {{aboutData['about']['Outside of Class'].join(', ')}}</p>-->
+
+                        <!--Maybe change so it's all left aligned-->
+                        <p class="text-muted wow fadeInDownBig"><strong>Tools</strong> :
+                            {{aboutData['about']['Tools'].join(', ')}}<br>
+                            <strong>Interests</strong> :
+                            {{aboutData['about']['Interests'].join(', ')}}<br>
+                            <strong>Outside of Class</strong> :
+                            {{aboutData['about']['Outside of Class'].join(', ')}}</p>
                     </div>
                 </div>
                 <div class="tab-pane fade" [ngClass]="{'active show': activeTab === 'skill'}" id="skill"
