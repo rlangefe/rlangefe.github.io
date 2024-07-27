@@ -21,3 +21,11 @@
         padding-top: 15px
     }
 }
+
+.e-mail:before {
+    content: "\72\6C\61\6E\67\65\66\65"
+}
+
+.e-mail:after {
+    content: "\75\6D\69\63\68\2E\65\64\75\0A"
+}

@@ -6,7 +6,7 @@
                 <div class="section-title text-center mb-4 pb-2 pointer wow fadeIn">
                     <div class="mb-5 pb-3"> <i class="fas fa-headset h1"></i></div>
                     <h2 class="text-white h3">Contact me</h2>
-                    <p class="text-white-50 mx-auto mb-0 mt-4 para-desc">Address, Phone Number and Email Address.</p>
+                    <!-- <p class="text-white-50 mx-auto mb-0 mt-4 para-desc">Get in Touch</p> -->
                 </div>
             </div>
         </div>
@@ -18,8 +18,12 @@
                         class="{{contact['icon']}} text-custom h3 mb-4"></i>
                     <h3 *ngFor="let links of contact['links']"
                         class="mb-{{contact['links'].length-1}} font-weight-normal line-height-normal"><a
+                            *ngIf="links['type'] !== 'mailto:'" 
                             rel="noreferrer" aria-label="contact(opens in a new tab)" target="_blank"
-                            class="contact-links" href="{{links['type']}}{{links['title']}}">{{links['title']}}</a></h3>
+                            class="contact-links" href="{{links['type']}}{{links['title']}}">{{links['title']}}</a>
+                            <span *ngIf="links['type'] === 'mailto:'" aria-label="contact(opens in a new tab)" target="_blank"
+                                class="contact-links e-mail">@</span>
+                    </h3>
                 </div>
             </div>
         </div>

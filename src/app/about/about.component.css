@@ -258,3 +258,34 @@ small {
         padding-top: 15px
     }
 }
+
+/* Divider Style */
+/* Rounded border */
+hr.rounded {
+    width: auto;
+    /* Centered */
+    margin-left: auto;
+    border-top: 5px solid #bbb;
+    border-radius: 5px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.grid-item {
+    /* Add any additional styling for grid items here */
+}
+
+ul {
+    /* set the layout to grid: */
+    display: grid;
+    /* define the number of rows you
+       require: */
+    grid-template-rows: repeat(4, 1fr);
+    /* set the flow of the grid to follow
+       a columnar layout: */
+    grid-auto-flow: column;
+  }

@@ -68,7 +68,7 @@ export class QuoteComponent implements OnInit {
 		setInterval(() => {
 		  this.swapTwoRandomImages();
 		  this.changeDetectorRef.detectChanges();
-		}, 3000); // Swap images every 3 seconds
+		}, 1500); // Swap images every 1.5 seconds
 	  }
 	
 	  swapTwoRandomImages(): void {
@@ -80,9 +80,9 @@ export class QuoteComponent implements OnInit {
 		[this.images[index1], this.images[index2]] = [this.images[index2], this.images[index1]];
 	  }
 
-	// public getRandomValue(e : any) {
-	// 	return Array.isArray(e) ? e[Math.floor(Math.random() * e.length)] : e;
-	// }
+	public getRandomValue(e : any) {
+		return Array.isArray(e) ? e[Math.floor(Math.random() * e.length)] : e;
+	}
 
 	// ngOnInit(): void {
 	// 	this.changeDetectorRef.detectChanges();

@@ -6,7 +6,7 @@
                 <div class="wow fadeIn section-title text-center mb-4 pb-2">
                     <div class="mb-5 pb-3"><i class="fas fa-user-graduate h1 text-muted"></i></div>
                     <h2 class="h3 font-weight-bold">About me</h2>
-                    <p class="text-muted mx-auto mb-0 mt-4 para-desc">What I do.</p>
+                    <p class="text-muted mx-auto mb-0 mt-4 para-desc">Who I am and what I do</p>
                 </div>
             </div>
         </div>
@@ -27,9 +27,9 @@
                                 alt="{{aboutData['name']}}" title="{{aboutData['name']}}"
                                 class="img-fluid mx-auto rounded-circle site-owner" height="400" width="400"
                                 loading="lazy"></div>
-                        <h3 class="mb-3 wow fadeIn">{{aboutData['name']}} <small class="text-muted"> -
+                        <h3 class="mb-3 wow fadeIn">{{aboutData['name']}} <small class="text-muted"><br>
                                 {{aboutData['about']['tech-stats']}} </small></h3>
-                        <p class="text-muted wow slideInUp">{{aboutData["about"]["bio"]}}</p>
+                        <p class="text-muted wow fadeIn" style="text-align: left;"><strong>Bio - </strong>{{aboutData["about"]["bio"]}}</p>
                         <!--
                         <p class="text-muted wow fadeInDownBig"><strong>Tools</strong> :
                             {{aboutData['about']['Tools'].join(', ')}}</p>
@@ -38,13 +38,29 @@
                             <p class="text-muted wow fadeInDownBig"><strong>Outside of Class</strong> :
                                 {{aboutData['about']['Outside of Class'].join(', ')}}</p>-->
 
+                        <hr class="rounded">
+
                         <!--Maybe change so it's all left aligned-->
-                        <p class="text-muted wow fadeInUpBig"><strong>Tools</strong> :
-                            {{aboutData['about']['Tools'].join(', ')}}<br>
-                            <strong>Interests</strong> :
-                            {{aboutData['about']['Interests'].join(', ')}}<br>
-                            <strong>Outside of Class</strong> :
-                            {{aboutData['about']['Outside of Class'].join(', ')}}</p>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <strong> The Tools I Use</strong>
+                                <ul>
+                                    <li *ngFor="let tool of aboutData['about']['Tools']" style="text-align: left;">{{ tool }}</li>
+                                </ul>
+                            </div>
+                            <div class="grid-item">
+                                <strong> My Research Interests</strong>
+                                <ul>
+                                    <li *ngFor="let interest of aboutData['about']['Interests']" style="text-align: left;">{{ interest }}</li>
+                                </ul>
+                            </div>
+                            <div class="grid-item">
+                                <strong> Outside of Research</strong>
+                                <ul>
+                                    <li *ngFor="let fun of aboutData['about']['Outside of Class']" style="text-align: left;">{{ fun }}</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" [ngClass]="{'active show': activeTab === 'skill'}" id="skill"
@@ -115,7 +131,9 @@
                                             <h3 class="experience-designation m-0 text-{{ed['textAlignment']}}">
                                                 {{ed['degree']}}</h3>
                                             <h4 class="experience-company-name text-{{ed['textAlignment']}}">
-                                                {{ed['college']}}</h4>
+                                                {{ed['college']}},</h4>
+                                            <h4 class="experience-company-name text-{{ed['textAlignment']}}">
+                                                    {{ed['location']}}</h4>
                                             <h5 class="experience-duration m-0 text-{{ed['textAlignment']}}">
                                                 {{ed['duration']}}</h5>
                                             <h6

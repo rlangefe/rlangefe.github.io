@@ -5,16 +5,19 @@
                 <div class="wow fadeIn section-title text-center mb-4 pb-2">
                     <div class="mb-5 pb-3"> <i class="fas fa-trophy h1 text-muted"></i></div>
                     <h2 class="h3 font-weight-bold">My Achievements</h2>
-                    <!-- <p class="text-muted mx-auto mb-0 mt-4 para-desc">Some of my Accomplishment.</p> -->
+                    <p class="text-muted mx-auto mb-0 mt-4 para-desc">Click the image to read more</p>
                 </div>
             </div>
         </div>
         <div class="container-ach">
-            <div *ngFor="let achievement of achievementData"
-                class="box col-lg-4 wow zoomIn{{achievement['animationClass']}}" data-wow-delay=0.5s>
-                <h3 class="description pl-1 h2"> {{achievement['description']}} </h3><img
-                    src="assets/images/achievement/{{achievement['image']}}" class="ach-img rounded-circle"
-                    alt="Achievement - {{achievement['image']}}" loading="lazy" title="{{achievement['image']}}">
+            <div *ngFor="let achievement of achievementData" class="box col-lg-4 wow zoomIn{{achievement['animationClass']}}" data-wow-delay=0s>
+                <h3 class="description pl-1 h2">{{achievement['description']}}<br><br>{{achievement['location']}}</h3>
+                <a *ngIf="achievement['link']" [href]="achievement['link']">
+                    <img src="assets/images/achievement/{{achievement['image']}}" class="ach-img rounded-circle" alt="Achievement - {{achievement['image']}}" loading="lazy" title="{{achievement['image']}}">
+                </a>
+                <div *ngIf="!achievement['link']">
+                    <img src="assets/images/achievement/{{achievement['image']}}" class="ach-img rounded-circle" alt="Achievement - {{achievement['image']}}" loading="lazy" title="{{achievement['image']}}">
+                </div>
             </div>
         </div>
     </div>
