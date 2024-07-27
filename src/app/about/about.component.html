@@ -1,3 +1,4 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet"/>
 <section class="section" id="about">
     <div class="container">
         <div class="row justify-content-center txt-bg txt-bg-about">
@@ -57,7 +58,7 @@
                                 <p class="text-muted text-uppercase mb-2">{{ skillProgress['skill'] }}</p>
                                 <div class="progress">
                                     <div class="progress-bar" [ngStyle]="{width:skillProgress.progress+'%'}">
-                                        <div class="progress-value text-muted">{{skillProgress.progress+'%'}}</div>
+                                        <!-- <div class="progress-value text-muted">{{skillProgress.progress+'%'}}</div> -->
                                     </div>
                                 </div>
                             </div>
@@ -71,10 +72,10 @@
                     <div class="row">
                         <div class="col-lg-6" *ngFor="let skills of aboutData['programmingLanguages']">
                             <div class="mt-5" *ngFor="let skillProgress of skills">
-                                <p class="text-muted text-uppercase mb-2">{{ skillProgress['skill'] }}</p>
+                                <p class="text-muted text-uppercase mb-2"><strong><i class="{{skillProgress['logo']}}"></i></strong> - {{ skillProgress['skill'] }}</p>
                                 <div class="progress">
                                     <div class="progress-bar" [ngStyle]="{width:skillProgress.progress+'%', 'background-color': '#FF675B'}">
-                                        <div class="progress-value text-muted">{{skillProgress.progress+'%'}}</div>
+                                        <!-- <div class="progress-value text-muted">{{skillProgress.progress+'%'}}</div> -->
                                     </div>
                                 </div>
                             </div>

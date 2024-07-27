@@ -26,13 +26,14 @@ export class AchievementComponent implements OnInit,AfterViewInit {
 	ngAfterViewInit(): void {
 		if (this.checkScreenSize) {
 			let box: any = document.querySelectorAll('.box');
-			VanillaTilt.init(box, {
-				max: 25,
-				speed: 400,
-				startX: 0,
-				startY: 0,
-				scale: 1.03
-			});
+			// Can uncomment to reenable the tilt effect
+			// VanillaTilt.init(box, {
+			// 	max: 25,
+			// 	speed: 400,
+			// 	startX: 0,
+			// 	startY: 0,
+			// 	scale: 1.03
+			// });
 		}
     }
 }

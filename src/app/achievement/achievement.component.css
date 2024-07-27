@@ -17,7 +17,9 @@
     background: #242a35;
     border-radius: 20px;
     transform-style: preserve-3d;
-    overflow: hidden
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container-ach .box .description {
@@ -32,7 +34,8 @@
     transition: .65s;
     opacity: 0;
     z-index: 10;
-    top: 60%
+    top: 60%;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container-ach .box:hover {

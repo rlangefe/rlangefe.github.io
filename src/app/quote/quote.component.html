@@ -1,13 +1,23 @@
 <section class="quote-section">
     <div class=overlay></div>
     <div class=container>
-        <div class="row justify-content-center">
+        <!-- <div class="row justify-content-center">
             <blockquote class="col-md-7 text-center fadeInUp">
                 <h3 class="wow slideInLeft h2 mb-5" data-wow-duration=0.25s data-wow-delay=0.1s>“{{quoteData['quote']}}”
                 </h3>
                 <h4 class="wow slideInRight h2" data-wow-duration=0.25s data-wow-delay=0.1s><cite
                         title="{{quoteData['author']}}">- {{quoteData['author']}}</cite></h4>
             </blockquote>
+        </div> -->
+        <!-- <div class="masonry">
+            <div class="brick" *ngFor="let img of quoteData['images']">
+                <img src="{{img['src']}}" alt="img['alt']" class="img-fluid">
+            </div>
+        </div> -->
+        <div class="masonry-grid">
+            <div *ngFor="let image of images">
+              <img src="{{image['src']}}" alt="{{image['alt']}}" style="background: #242a35;" [@fadeInOut]>
+            </div>
         </div>
     </div>
 </section>
