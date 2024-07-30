@@ -11,6 +11,7 @@
         </div>
         <div class="container-ach">
             <div *ngFor="let achievement of achievementData" class="box col-lg-4 wow zoomIn{{achievement['animationClass']}}" data-wow-delay=0s>
+                <h3 class="title pl-1 h2">{{achievement['description']}}</h3>
                 <h3 class="description pl-1 h2">{{achievement['description']}}<br><br>{{achievement['location']}}</h3>
                 <a *ngIf="achievement['link']" [href]="achievement['link']">
                     <img src="assets/images/achievement/{{achievement['image']}}" class="ach-img rounded-circle" alt="Achievement - {{achievement['image']}}" loading="lazy" title="{{achievement['image']}}">

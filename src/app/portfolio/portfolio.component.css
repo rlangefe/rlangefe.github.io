@@ -42,7 +42,7 @@
     -moz-transition: all .5s ease-in-out 0s;
     -webkit-transition: all .5s ease-in-out 0s;
     -o-transition: all .5s ease-in-out 0s;
-    transition: all .5s ease-in-out 0s
+    transition: all .5s ease-in-out 0s;
 }
 
 .item-mask {

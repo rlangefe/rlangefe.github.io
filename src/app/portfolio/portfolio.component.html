@@ -5,7 +5,7 @@
                 <div class="wow fadeIn section-title text-center mb-4 pb-2">
                     <div class="mb-5 pb-3"> <i class="far fa-clone h1 text-muted"></i></div>
                     <h2 class="h3 font-weight-bold">My Portfolio</h2>
-                    <p class="text-muted mx-auto mb-0 mt-4 para-desc">Sample of some of my projects</p>
+                    <p class="text-muted mx-auto mb-0 mt-4 para-desc">A sample of some of my projects</p>
                 </div>
             </div>
         </div>
@@ -33,11 +33,20 @@
                             Code.</em> </strong></ng-template><a class="item-box m-2"
                     [placement]="[project['placement']]" [ngbTooltip]="title" rel="noreferrer"
                     aria-label="project(opens in a new tab)"
-                    href="{{project['url']}}" target="_blank"><img
-                        class="item-container img-fluid mx-auto"
-                        src="assets/images/portfolio/{{project['project']}}.webp"
-                        alt="{{project['project'].replaceAll('-',' ')}}"
-                        title="{{project['project'].replaceAll('-',' ')}}" width="698" height="543" loading="lazy">
+                    href="{{project['url']}}" target="_blank">
+                    <img *ngIf="!project['image']"
+                    class="item-container img-fluid mx-auto"
+                    src="assets/images/portfolio/{{project['project']}}.webp"
+                    alt="{{project['project'].replaceAll('-',' ')}}"
+                    title="{{project['project'].replaceAll('-',' ')}}" width="698" height="543" loading="lazy">
+                    <img *ngIf="project['image']"
+                    class="item-container img-fluid mx-auto"
+                    src="{{project['image']}}"
+                    alt="{{project['project'].replaceAll('-',' ')}}"
+                    title="{{project['project'].replaceAll('-',' ')}}" width="698" height="543" loading="lazy">
+                    <div class="item-container text-black text-center" style="position: absolute; bottom: 10%; text-align: center;">
+                        <h3 style="background-color:rgba(255,255,255, 0.5);">{{project['project'].replaceAll('-',' ')}}</h3>
+                    </div>
                     <div class=item-mask>
                         <div class="item-caption text-white text-center">
                             <h3 class="h5">{{project['project'].replaceAll('-',' ')}}</h3>

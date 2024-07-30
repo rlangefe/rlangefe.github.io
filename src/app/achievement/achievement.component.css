@@ -36,12 +36,31 @@
     top: 60%;
 }
 
+.container-ach .box .title {
+    /* position: absolute; */
+    left: 10px;
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+    font-size: 18px;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px);
+    transition: .65s;
+    opacity: 1;
+    z-index: 10;
+    top: 60%;
+}
+
 .container-ach .box:hover {
     box-shadow: 0 30px 50px rgba(0, 0, 0, .3)
 }
 
 .container-ach .box:hover .description {
     opacity: 1
+}
+
+.container-ach .box:hover .title {
+    opacity: 0
 }
 
 .container-ach .box .ach-img {
