@@ -9,7 +9,8 @@ const routes: Routes = [
 	{
 		path: '',
 		loadChildren: () => import('./application/application.module').then(m => m.ApplicationModule)
-	},{
+	},
+	{
 		path : '**',
 		redirectTo : '/404'
 	}
