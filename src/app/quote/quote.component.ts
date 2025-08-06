@@ -31,7 +31,7 @@ export class QuoteComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.changeDetectorRef.detectChanges();
-		this.randomizeImages();
+		// this.randomizeImages();
 	  }
 	
 	// randomizeImages(): void {
